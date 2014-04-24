@@ -3,7 +3,7 @@ Each txt file contains the index of the dictionary words in the image.
 
 2, The main funciton is in SLDA/src/impl/app.java
 
-3, imagesmall is a small image set contains only 60 images for test.
+3, imagesmall is a small image set contains 110 images for test.
    image_200 is a image set contains 200 images for test and used for demo.
    image_500 contains 500 images for test. It will run for a very long time
 
