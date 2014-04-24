@@ -23,6 +23,7 @@ Output: Segment objects from the images, classify images into different categori
       a, Each image is splited into 8 * 8 equal pieces. Each piece is a document. 
       b, Get the center points of the pieces to represent the documents.
       c, Initially assign the descriptors to the documents based on their location in the image.
+      d, Get the SIFT descriptors for each piece and match them to the nearest cluster id.
       
 * A key difference between SLDA and LDA is that in SLDA, the word-document assignment is a  hidden random variable.
   There is a generative procedure to assign words to documents. 
@@ -30,4 +31,9 @@ Output: Segment objects from the images, classify images into different categori
 3, Gibbs Sampling process
       a, Assign the words to documents
       b, Label the topic for the words
-      
+ 
+4, Visual clusters
+      Each image piece can be represented by a list of cluster ids. 
+      Assign the images which contain the specific cluster id to that cluster and show the result in an interface. 
+      An image can contain various cluster ids and thus can be assigned to various clusters.
+         
